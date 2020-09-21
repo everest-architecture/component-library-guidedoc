@@ -1,0 +1,18 @@
+
+# dependencies
+/node_modules
+/npm-debug.log*
+/yarn-error.log
+
+# production
+/dist
+/docs-dist
+
+# misc
+.DS_Store
+
+# umi
+.umi
+.umi-production
+.umi-test
+.env.local
