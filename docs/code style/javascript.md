@@ -1,3 +1,9 @@
+---
+order: 2
+group:
+    order: 2
+---
+
 ## javascript 代码风格规范
 
 ### 避免使用默认导出

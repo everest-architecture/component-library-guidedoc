@@ -19,6 +19,10 @@
 	},
 	"homepage": "https://github.com/everest-architecture/component-library-guidedoc#readme",
 	"dependencies": {
-		"dumi": "^1.0.34"
+		"@types/styled-components": "^5.1.3",
+		"dumi": "^1.0.34",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"styled-components": "^5.2.0"
 	}
 }
