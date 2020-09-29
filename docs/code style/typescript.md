@@ -14,11 +14,11 @@
 
 ```ts
 interface IApiService {
-	getUser(): IUser;
+  getUser(): IUser;
 }
 
 class ApiService implements IApiService {
-	/* ... */
+  /* ... */
 }
 ```
 
@@ -26,50 +26,50 @@ class ApiService implements IApiService {
 
 ```ts
 interface IData {
-	name: string;
-	surname: string;
+  name: string;
+  surname: string;
 }
 
 interface IAdmin extends IData {
-	/* ... */
+  /* ... */
 }
 ```
 
 ### 如果可以的话，尽量将类型分的更细一点
 
--   示例
+- 示例
 
 ```ts
 interface IData {
-	level: number;
+  level: number;
 }
 ```
 
--   改为：
+- 改为：
 
 ```ts
 type TLevel = 1 | 2;
 
 interface IData {
-	level: TLevel;
+  level: TLevel;
 }
 ```
 
 ### 使用？来替代 undefined 类型
 
--   示例
+- 示例
 
 ```ts
 interface IData {
-	level: number | undefined;
+  level: number | undefined;
 }
 ```
 
--   修改为
+- 修改为
 
 ```ts
 interface IData {
-	level?: number;
+  level?: number;
 }
 ```
 
@@ -77,13 +77,13 @@ interface IData {
 
 ```ts
 class Api {
-	public getUser = () => {
-		const token = this.getToken();
-		/* ... */
-	};
+  public getUser = () => {
+    const token = this.getToken();
+    /* ... */
+  };
 
-	private getToken = () => {
-		/* ... */
-	};
+  private getToken = () => {
+    /* ... */
+  };
 }
 ```
