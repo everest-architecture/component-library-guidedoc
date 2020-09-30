@@ -1,6 +1,3 @@
-import React, { CSSProperties } from 'react';
-import { getConfig } from './theme';
-
 export const basicColor = {
   red100: '#fff1f0',
   red200: '#ffccc7',
@@ -247,7 +244,7 @@ export const borderColor = {
 export const textColor = {
   textBasicColor: 'gray800',
   textInverseColor: 'gray100',
-  textDisabledColor: 'gray400',
+  textDisabledColor: 'gray500',
   textHintColor: 'gray600',
 };
 
@@ -255,139 +252,3 @@ export const textColor = {
 export const extraColor = {
   outlineColor: 'gray200',
 };
-
-const divStyle = (v: string): CSSProperties => {
-  return {
-    backgroundColor: v,
-    textAlign: 'center',
-    height: '50px',
-    lineHeight: '50px',
-    fontWeight: 'bold',
-    fontFamily: 'simsun',
-  };
-};
-
-const ColorToDumi = () => {
-  return (
-    <div>
-      <div>
-        <h1>基础色</h1>
-        <div>基础色主要便于挑选各种基础颜色</div>
-        {Object.keys(basicColor).map((key: string, i) => {
-          return (
-            <div key={i} style={divStyle(basicColor[key])}>
-              {key} : {basicColor[key]}
-            </div>
-          );
-        })}
-      </div>
-      <div>
-        <h1>主题色</h1>
-        <div>
-          也叫品牌色，偏向选蓝色，这个是随便挑了个蓝色在antd生成器里生成的。
-        </div>
-        {Object.keys(themeColor).map((key: string, i) => {
-          return (
-            <div
-              key={i}
-              style={divStyle(getConfig({ ...basicColor, ...themeColor })[key])}
-            >
-              {key} : {themeColor[key]}
-            </div>
-          );
-        })}
-      </div>
-      <div>
-        <h1>状态色</h1>
-        <div>参照主题色模式设定，只是颜色不一样</div>
-        {Object.keys(statusColor).map((key: string, i) => {
-          return (
-            <div
-              key={i}
-              style={divStyle(
-                getConfig({ ...basicColor, ...statusColor })[key]
-              )}
-            >
-              {key} : {statusColor[key]}
-            </div>
-          );
-        })}
-      </div>
-      <div>
-        <h1>背景色</h1>
-        <div>暗色主题相反</div>
-        {Object.keys(backgroundColor).map((key: string, i) => {
-          return (
-            <div
-              key={i}
-              style={divStyle(
-                getConfig({
-                  ...basicColor,
-                  ...backgroundColor,
-                })[key]
-              )}
-            >
-              {key} : {backgroundColor[key]}
-            </div>
-          );
-        })}
-      </div>
-      <div>
-        <h1>边框色</h1>
-        <div>主要是界面那种边框</div>
-        {Object.keys(borderColor).map((key: string, i) => {
-          return (
-            <div
-              key={i}
-              style={divStyle(
-                getConfig({
-                  ...basicColor,
-                  ...borderColor,
-                })[key]
-              )}
-            >
-              {key} : {borderColor[key]}
-            </div>
-          );
-        })}
-      </div>
-      <div>
-        <h1>文字色</h1>
-        {Object.keys(textColor).map((key: string, i) => {
-          return (
-            <div
-              key={i}
-              style={divStyle(
-                getConfig({
-                  ...basicColor,
-                  ...textColor,
-                })[key]
-              )}
-            >
-              {key} : {textColor[key]}
-            </div>
-          );
-        })}
-      </div>
-      <div>
-        <h1>额外部分</h1>
-        {Object.keys(extraColor).map((key: string, i) => {
-          return (
-            <div
-              key={i}
-              style={divStyle(
-                getConfig({
-                  ...basicColor,
-                  ...extraColor,
-                })[key]
-              )}
-            >
-              {key} : {extraColor[key]}
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-export default ColorToDumi;

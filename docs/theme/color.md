@@ -5,7 +5,7 @@ group:
 ---
 
 ```tsx | inline
-import ColorToDumi from './color';
+import { ColorToDumi } from './theme';
 import React from 'react';
 export default () => <ColorToDumi />;
 ```

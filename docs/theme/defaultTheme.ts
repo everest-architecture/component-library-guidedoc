@@ -1,3 +1,4 @@
+import { typography } from '../typography/typographyVariable';
 import {
   backgroundColor,
   basicColor,
@@ -18,4 +19,5 @@ export const defaultTheme = {
   ...textColor,
   ...borderColor,
   ...extraColor,
+  ...typography,
 };

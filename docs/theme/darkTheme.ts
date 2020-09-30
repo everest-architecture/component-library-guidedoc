@@ -20,8 +20,8 @@ export const darkTheme = {
 
   textBasicColor: 'gray100',
   textInverseColor: 'gray800',
-  textDisabledColor: 'gray500',
-  textHintColor: 'gray600',
+  textDisabledColor: 'gray600',
+  textHintColor: 'gray500',
 
   outlineColor: 'gray700',
 };
