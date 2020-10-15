@@ -9,10 +9,5 @@ order: 1
 - 第三周：确立排版
 - 第四周：确立全局变量，工具函数。
 - 第五周：确立文件夹结构，构建工具，打包配置。
-- 第六周：确立 Avatar、badge、button 样式与功能
-- 第七周：确立 Card、List、Popover 样式与功能
-- 第八周：确立 menu、table、pagenation 样式与功能
-- 第九周：确立 Form、radio、checkbox 样式与功能
-- 第十周：确立 inputNumber、input、select 样式与功能
-- 第十一周：确立 upload，switch，datepicker 样式与功能。
-- 第十二周：确立文档平台制作，cicd 配置。
+- 由于几乎无人参与，后续变为每个组件一周一更。
+- 如果有想写哪个组件的同学，直接写对应的提交上来即可。
