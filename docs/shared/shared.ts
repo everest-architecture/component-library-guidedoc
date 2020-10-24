@@ -67,7 +67,7 @@ export const commonAnimation = (duration: string) => {
 export const modalOpenAnimate = keyframes`
   0% {
     opacity: 0;
-    transform:scaleY(0,0);
+    transform:scale(0,0);
   }
   100% {
     opacity: 1;
@@ -83,7 +83,7 @@ export const modalCloseAnimate = keyframes`
   }
   100% {
     opacity: 0;
-    transform:scaleY(0,0);
+    transform:scale(0,0);
   }
 `;
 

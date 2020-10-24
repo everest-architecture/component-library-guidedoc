@@ -1,3 +1,4 @@
+import { buttonTheme } from '../button/buttonVariable';
 import { typography } from '../typography/typographyVariable';
 import {
   backgroundColor,
@@ -20,4 +21,5 @@ export const defaultTheme = {
   ...borderColor,
   ...extraColor,
   ...typography,
+  ...buttonTheme,
 };
