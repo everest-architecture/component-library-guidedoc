@@ -12615,6 +12615,11 @@ yh-react-virtuallist@^0.4.0:
   resolved "https://registry.yarnpkg.com/yh-react-virtuallist/-/yh-react-virtuallist-0.4.0.tgz#6173c9b822f4f31cd9d6dfab441507b90bcbc8c8"
   integrity sha512-7JnOAYKNq8zEqEVCGmeLGMDgt3VPcxZKImwAlomHVseOgE6JkRWbWTnYb1g5JVYYbbzRL6l/OxHg6GNHkLbSIw==
 
+yh-verificationcode@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/yh-verificationcode/-/yh-verificationcode-0.1.0.tgz#b20b559d77dc7effcdd69409d649c77a4f720b2c"
+  integrity sha512-oTyrvpVvaAuGfnK8HDWo3W8gpTmX9u5EewFXt5VWCDC/ZyCMKR+y2VWylU/+ZvJ35wUvuLvzaYNUmmGWb3bCsg==
+
 zlib@1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/zlib/-/zlib-1.0.5.tgz#6e7c972fc371c645a6afb03ab14769def114fcc0"

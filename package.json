@@ -42,7 +42,8 @@
     "react-dom": "^16.13.1",
     "styled-components": "^5.2.0",
     "typescript": "^4.0.3",
-    "yh-react-virtuallist": "^0.4.0"
+    "yh-react-virtuallist": "^0.4.0",
+    "yh-verificationcode": "^0.1.0"
   },
   "husky": {
     "hooks": {
